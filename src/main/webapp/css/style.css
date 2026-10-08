@@ -1,0 +1,311 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7fff9;
+    color: #183b24;
+}
+h1 {
+    color: #176b3a;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #218c4a;
+}
+
+p {
+    color: #4b6353;
+    font-size: 17px;
+    line-height: 1.6;
+}
+button {
+    background: #218c4a;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #176b3a;
+    transform: scale(1.05);
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero {
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    width: 70%;
+    max-width: 750px;
+    box-shadow: 0 10px 30px rgba(33, 140, 74, 0.15);
+    border: 1px solid #d8f0df;
+}
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.hero p:first-of-type {
+    font-size: 21px;
+    font-weight: bold;
+    color: #218c4a;
+}
+
+.hero p:last-of-type {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 15px auto 0;
+}
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    background: #218c4a;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    background: #176b3a;
+    transform: translateY(-3px);
+}
+@media (max-width: 600px) {
+
+    .hero {
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons a {
+        width: 180px;
+        text-align: center;
+    }
+}
+.product-card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid #218c4a;
+    box-shadow: 0 8px 25px rgba(33, 140, 74, 0.20);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(33, 140, 74, 0.30);
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #176b3a;
+    margin-top: 15px;
+}
+.product-category {
+    display: inline-block;
+    background: #e3f5e9;
+    color: #176b3a;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.buy-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 24px;
+    background: #218c4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background: #176b3a;
+    transform: scale(1.05);
+}
+.order-form {
+    background: white;
+    width: 400px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(33, 140, 74, 0.15);
+    border: 1px solid #d8f0df;
+}
+.order-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #b8d9c1;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.order-form input:focus {
+    outline: none;
+    border-color: #218c4a;
+    box-shadow: 0 0 5px rgba(33, 140, 74, 0.2);
+}
+.order-form label {
+    font-weight: bold;
+    color: #176b3a;
+    font-size: 15px;
+}
+.order-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #b8d9c1;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-size: 15px;
+    background: white;
+}
+
+.order-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.order-form button {
+    display: block;
+    margin: 10px auto 0;
+}
+/* Purchase Success Leaf Rain */
+
+.success-card {
+    background: white;
+    padding: 50px;
+    border-radius: 25px;
+    width: 70%;
+    max-width: 750px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(33, 140, 74, 0.15);
+    border: 1px solid #d8f0df;
+}
+
+.success-message {
+    font-size: 20px;
+    color: #218c4a;
+    font-weight: bold;
+}
+
+.leaf-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.leaf-container span {
+    position: absolute;
+    top: -50px;
+    font-size: 28px;
+    animation: leafFall 5s linear infinite;
+}
+
+.leaf-container span:nth-child(1)  { left: 5%;  animation-delay: 0s; }
+.leaf-container span:nth-child(2)  { left: 12%; animation-delay: 1s; }
+.leaf-container span:nth-child(3)  { left: 20%; animation-delay: 2s; }
+.leaf-container span:nth-child(4)  { left: 28%; animation-delay: 0.5s; }
+.leaf-container span:nth-child(5)  { left: 35%; animation-delay: 1.5s; }
+.leaf-container span:nth-child(6)  { left: 42%; animation-delay: 3s; }
+.leaf-container span:nth-child(7)  { left: 50%; animation-delay: 0.8s; }
+.leaf-container span:nth-child(8)  { left: 58%; animation-delay: 2.2s; }
+.leaf-container span:nth-child(9)  { left: 65%; animation-delay: 1.2s; }
+.leaf-container span:nth-child(10) { left: 72%; animation-delay: 3.5s; }
+.leaf-container span:nth-child(11) { left: 79%; animation-delay: 0.3s; }
+.leaf-container span:nth-child(12) { left: 85%; animation-delay: 1.8s; }
+.leaf-container span:nth-child(13) { left: 90%; animation-delay: 2.8s; }
+.leaf-container span:nth-child(14) { left: 94%; animation-delay: 0.7s; }
+.leaf-container span:nth-child(15) { left: 98%; animation-delay: 2.5s; }
+
+@keyframes leafFall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+/* Real CSS Leaves */
+
+.leaf-container .leaf {
+    position: absolute;
+    top: -50px;
+    width: 22px;
+    height: 12px;
+    background: #4caf50;
+    border-radius: 100% 0 100% 0;
+    transform: rotate(45deg);
+    animation: leafFall 5s linear infinite;
+    box-shadow: 0 2px 5px rgba(0, 80, 30, 0.2);
+}
+
+.leaf-container .leaf::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #176b3a;
+    left: 10px;
+    top: 0;
+    transform: rotate(-45deg);
+}
